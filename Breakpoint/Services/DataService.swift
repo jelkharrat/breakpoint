@@ -45,7 +45,17 @@ class DataService {
         REF_USER.child(uid).updateChildValues(userData)
     }
     
-    
-    
+    //throws a message up into firebase
+    func uploadPost(withMessage message: String, forUID uid: String, withGroupKey groupKey: String?, sendComplete: SENDCOMPLETE) {
+        //if there IS a group key (that already exists?)
+        if groupKey != nil {
+            //sends to group reference
+        }else{
+            //childByAutoId = unique identifier to each individual message. update with a dictionary
+            REF_FEED.childByAutoId().updateChildValues(["content":message, "senderId":uid])
+            sendComplete(true)
+        }
+        
+    }
     
 }

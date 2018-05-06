@@ -9,3 +9,5 @@
 import Foundation
 
 typealias COMPLETE = (_ Success: Bool, _ error:Error?) -> ()
+
+typealias SENDCOMPLETE = (_ Success: Bool) -> ()

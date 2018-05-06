@@ -19,6 +19,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FIRApp.configure()
+        
+        //if no authenticated user logged in, present the AuthVC
+        if FIRAuth.auth()?.currentUser == nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let authVC = storyboard.instantiateViewController(withIdentifier: "AuthVC")
+            
+            //declaring this the key window/most important window
+            window?.makeKeyAndVisible()
+            //allows us to call view controller ontop of app delegate
+            window?.rootViewController?.present(authVC, animated: true, completion: nil)
+        }
+        
         return true
     }
 

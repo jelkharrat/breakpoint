@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		88AC6341208809CE00539708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AC6340208809CE00539708 /* AppDelegate.swift */; };
-		88AC6343208809CE00539708 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AC6342208809CE00539708 /* FirstViewController.swift */; };
-		88AC6345208809CE00539708 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AC6344208809CE00539708 /* SecondViewController.swift */; };
+		88AC6343208809CE00539708 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AC6342208809CE00539708 /* FeedVC.swift */; };
+		88AC6345208809CE00539708 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AC6344208809CE00539708 /* GroupsVC.swift */; };
 		88AC6348208809CF00539708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AC6346208809CF00539708 /* Main.storyboard */; };
 		88AC634A208809CF00539708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AC6349208809CF00539708 /* Assets.xcassets */; };
 		88AC634D208809CF00539708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AC634B208809CF00539708 /* LaunchScreen.storyboard */; };
@@ -21,6 +21,7 @@
 		88C9534E2091FBF100E6158B /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9534D2091FBF100E6158B /* ShadowView.swift */; };
 		88C953502092003100E6158B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9534F2092003100E6158B /* AuthService.swift */; };
 		88C953532092016100E6158B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C953522092016100E6158B /* Constants.swift */; };
+		88C95355209F2BC200E6158B /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C95354209F2BC200E6158B /* MeVC.swift */; };
 		A05119E31E41385070D62C7A /* Pods_Breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3DF02CC96C6FF95A9AC349 /* Pods_Breakpoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +29,8 @@
 		7801BDD68FD138613F6E7916 /* Pods-Breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakpoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-Breakpoint/Pods-Breakpoint.release.xcconfig"; sourceTree = "<group>"; };
 		88AC633D208809CE00539708 /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AC6340208809CE00539708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88AC6342208809CE00539708 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		88AC6344208809CE00539708 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		88AC6342208809CE00539708 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		88AC6344208809CE00539708 /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		88AC6347208809CF00539708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88AC6349208809CF00539708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88AC634C208809CF00539708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		88C9534D2091FBF100E6158B /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		88C9534F2092003100E6158B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		88C953522092016100E6158B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		88C95354209F2BC200E6158B /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		B9B4FF91B386AAB070000456 /* Pods-Breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakpoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Breakpoint/Pods-Breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
 		DD3DF02CC96C6FF95A9AC349 /* Pods_Breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,10 +109,11 @@
 		88AC635420880A7800539708 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				88AC6342208809CE00539708 /* FirstViewController.swift */,
-				88AC6344208809CE00539708 /* SecondViewController.swift */,
+				88AC6342208809CE00539708 /* FeedVC.swift */,
+				88AC6344208809CE00539708 /* GroupsVC.swift */,
 				88C95347208FEF6D00E6158B /* AuthVC.swift */,
 				88C95349208FF00600E6158B /* LoginVC.swift */,
+				88C95354209F2BC200E6158B /* MeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,13 +299,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C95348208FEF6D00E6158B /* AuthVC.swift in Sources */,
-				88AC6345208809CE00539708 /* SecondViewController.swift in Sources */,
+				88AC6345208809CE00539708 /* GroupsVC.swift in Sources */,
 				88C9534A208FF00600E6158B /* LoginVC.swift in Sources */,
 				88C953502092003100E6158B /* AuthService.swift in Sources */,
 				88AC6341208809CE00539708 /* AppDelegate.swift in Sources */,
 				88C953532092016100E6158B /* Constants.swift in Sources */,
 				88C9534E2091FBF100E6158B /* ShadowView.swift in Sources */,
-				88AC6343208809CE00539708 /* FirstViewController.swift in Sources */,
+				88C95355209F2BC200E6158B /* MeVC.swift in Sources */,
+				88AC6343208809CE00539708 /* FeedVC.swift in Sources */,
 				88C9534C208FF0B800E6158B /* InsetTextField.swift in Sources */,
 				88C953462089723400E6158B /* DataService.swift in Sources */,
 			);

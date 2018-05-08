@@ -58,4 +58,23 @@ class DataService {
         
     }
     
+    //Want to pull info from the Feed reference (_RED_FFEED), then want to pass data out of closure so we use a handler for that
+    func getAllFeedMessages(handler: @escaping (_ messages: [Message]) -> ()) {
+        var messageArray = [Message]()
+        //Observe single event after loading every message from feed array
+        REF_FEED.observeSingleEvent(of: .value) { (feedMessageSnapshot) in
+            guard let feedMessageSnapshot = feedMessageSnapshot.children.allObjects as? [FIRDataSnapshot] else { return }
+            
+            //going to cycle through the FirDataSnapshot array and store all the messages in Message array
+            for message in feedMessageSnapshot {
+                // The string "content" is a reference to what the name of the data section in firebase is called
+                let content = message.childSnapshot(forPath: "content").value as! String
+                let senderId = message.childSnapshot(forPath: "senderId").value as! String
+                let message = Message(content: content, senderId: senderId)
+                messageArray.append(message)
+            }
+            handler(messageArray)
+        }
+    }
+    
 }
